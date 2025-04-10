@@ -1,5 +1,5 @@
 -- Lab 4: Advanced SQL Operations
--- Student: [Your Name]
+-- Student: [AL Amin 126]
 -- Course: SQL Operations & Database Management 3
 -- Instructor: Salma Filali
 
