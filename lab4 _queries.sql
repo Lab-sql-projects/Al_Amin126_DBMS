@@ -79,3 +79,33 @@ GRANT SELECT ON UniversityDB.student_public_info TO 'readonly_user'@'localhost';
 -- Show grants for verification (run separately if needed)
 -- SHOW GRANTS FOR 'readonly_user'@'localhost';
 SHOW INDEX FROM Enrollments;
+SHOW INDEX FROM Students;
+SHOW INDEX FROM Courses;
+SHOW INDEX FROM Professors;
+
+SHOW FULL TABLES IN UniversityDB WHERE TABLE_TYPE = 'VIEW';
+SELECT * FROM student_public_info;
+
+SHOW CREATE VIEW student_public_info;
+SHOW CREATE TABLE Students;
+
+SHOW FULL TABLES IN UniversityDB WHERE TABLE_TYPE = 'VIEW';
+SELECT * FROM student_public_info;
+SHOW CREATE VIEW student_public_info;
+SHOW CREATE TABLE Students;
+SHOW CREATE TABLE Courses;
+
+SHOW INDEX FROM Students;
+SHOW INDEX FROM Enrollments;
+SHOW INDEX FROM Courses;
+SHOW INDEX FROM Professors;
+
+ROLLBACK;
+SELECT * FROM Students WHERE email = 'tempuser@uni.com';
+
+COMMIT;
+SELECT * FROM Students WHERE email = 'tempuser@uni.com';
+
+
+SHOW GRANTS FOR 'readonly_user'@'localhost';
+
